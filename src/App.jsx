@@ -4,6 +4,7 @@ import Avaleht from './pages/Avaleht';
 import VaataArvuteid from './pages/VaataArvuteid';
 import LisaArvuti from './pages/LisaArvuti';
 import NotFound from "./pages/NotFound"
+import Ostukorv from './pages/Ostukorv';
 
 function App() {
 
@@ -18,13 +19,18 @@ function App() {
       <Link to="/add">
         <button>Lisa sülearvuti</button>
       </Link>
-      <Link to="/notfound"><button>Not Found</button></Link>
+      <Link to="/ostukorv">
+        <button>Ostukorv</button>
+      </Link>
+      <Link to="/notfound"><button>Not Found</button>
+      </Link>
       
       <Routes>
         <Route path="" exact element={ <Avaleht/> }/>
         <Route path="all" exact element={ <VaataArvuteid/> }/>
         <Route path="add" exact element={ <LisaArvuti/> }/>
         <Route path="/notfound" element={<NotFound/>}/>
+        <Route path="/ostukorv" element={<Ostukorv/>}/>
       </Routes> 
     </div>
   );
