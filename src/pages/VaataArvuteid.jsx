@@ -1,8 +1,11 @@
 
+
 function VaataArvuteid() {
+
+ 
   return (
     <div>
-        VaataArvuteid
+      
     </div>
   )
 }

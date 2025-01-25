@@ -5,6 +5,7 @@ import VaataArvuteid from './pages/VaataArvuteid';
 import LisaArvuti from './pages/LisaArvuti';
 import NotFound from "./pages/NotFound"
 import Ostukorv from './pages/Ostukorv';
+import Tooted from './pages/Tooted';
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
       <Link to="/ostukorv">
         <button>Ostukorv</button>
       </Link>
+      <Link to="/tooted">
+        <button>Tooted</button>
+      </Link>
       <Link to="/notfound"><button>Not Found</button>
       </Link>
       
@@ -31,6 +35,7 @@ function App() {
         <Route path="add" exact element={ <LisaArvuti/> }/>
         <Route path="/notfound" element={<NotFound/>}/>
         <Route path="/ostukorv" element={<Ostukorv/>}/>
+        <Route path="/tooted" element={<Tooted/>}/>
       </Routes> 
     </div>
   );
